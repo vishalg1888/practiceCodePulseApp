@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmjWSGYUVfkS3knQB1lEdzQAAAAACAAAAAAAQZgAAAAEAACAAAAAz+/N29rjc0QDudpcPRYWIqUR41K87tbZZgQMMx6a5YgAAAAAOgAAAAAIAACAAAAD+UCPdmXEXS5+sRMUephO0ViT/Oxz/YIfdXNexbYrPBIAAAAAR6oRnu1la72nz7U0CGzsT0gDb/hMv1BNW1v1EyqnfUv4StClAR/17qMFRGWT95CYtOuGfFJYQ5I3scWkK0DoWNKNhW+aJc4VROaQbwCBf5hc/c1d8zulyyg52sclZG5R5Xz2OxtAQeKsEI9RoMZJE/huZGqBrdvOIsE49QcsPP0AAAACwzJFX/MDGvEQHSejA3sZjSP1pEpGtGxkRCmntlyn2f10nuzp351iLmfCtNI34wT9ztTT6H8GQW1/X0byqJJO7</EncryptedPassword>
+    <History>True|2023-12-23T12:30:02.1698838Z;True|2023-12-23T17:53:24.0898137+05:30;True|2023-12-23T17:43:38.7041329+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="CodePulseConnectionString">
+      <Value>Data Source=testimgserver.database.windows.net,1433%3bInitial Catalog=TestCodePulseDb%3bUser ID=vishaladmin%3bPassword=admin%401234</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

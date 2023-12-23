@@ -1,0 +1,33 @@
+<div class="container">
+  <h1 class="mt-3">Edit Category</h1>
+  <ng-container *ngIf="category;else notfound">
+    <!-- if category has a value then fill/insert form here else shpw notfound template -->
+    <form #form="ngForm" (ngSubmit)="OnFormSubmit()" class="mt-3">
+        <div class="mt-3">
+            <label class="form-label">Category Id</label>
+            <input type="text" disabled="" id="categoryid" class="form-control" value="{{category.id}}" name="categoryid">
+        </div>
+        <div class="mt-3">
+            <label class="form-label">Category Name</label>
+            <input type="text" id="categoryname" class="form-control" [(ngModel)]="category.name" name="categoryname">
+        </div>
+
+        <div class="mt-3">
+            <label class="form-label">Category Url Handle</label>
+            <input type="text" id="categoryurlhandle" class="form-control" [(ngModel)]="category.urlHandle" name="categoryurlhandle">
+        </div>
+
+        <div class="mt-3">
+            <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+        <div class="mt-3">
+            <button type="button" class="btn btn-danger" (click)="OnDelete()">Delete</button>
+        </div>
+    </form>
+
+   </ng-container>
+
+   <ng-template #notfound>
+     <div class="alert alert-warning" role="alert">Category not Found</div>
+   </ng-template>
+</div>
